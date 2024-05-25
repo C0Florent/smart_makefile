@@ -1,0 +1,3 @@
+*.o
+.vscode
+example1/my_test
