@@ -46,20 +46,41 @@ Comme on peut le voir, main.c inclut defs.h, pourtant, avec un Makefile simplist
 
 ## 2- Pourquoi ce résultat ?
 
-- Analyse du Makefile simple
+### Regardons le Makefile de ce projet
+
+### Qu'est-ce qui fait qu'une règle est relancée ou non par `make` ?
+
+#### Mise au point sur le vocabulaire utilisé
+
+- Voir le [lexique en annexe](#make)
+
+#### Lancement récursif des règles, fonctionnement par date de dernière modification
+
+### Donc au final, comment fonctionne ce Makefile ? Pourquoi le compilation n'est-elle pas relancée ?
+
 - Explication des fonctionnalités de `make` mises en jeu dans ce genre de Makefile
 
 ## 3- Quelles solutions avons-nous à notre disposition ?
 
+### Décrire manuellement les dépendances de chaque source
+
+- Démonstration de l'ajout explicite des dépendances de chaque fichier
+
+### Différents éléments qui permettraient d'automatiser ce processus
+
+#### Demander un coup de main au compilateur pour relever les dépendances
+
 - `$ man gcc` `/-M` -> Présentations des options `-M` qui permettent de demander au compilateur de générer des fichiers de dépendances
+
+#### Manipulation des règles `make` qui sont utilisées pour compiler les sources
+
 - Redéfinition des règles implicites qui servent à compiler les .o
 - Suppression de ces mêmes règles implicites
 - Inclusion de Makefiles dans d'autres
 
 ## 4- Comment assembler ces solutions pour former un système de Makefile qui recompile les sources quand les en-têtes sont modifiés ?
 
-Soit démo en live de l'écriture du Makefile, soit diaporam animé avec les éléments qui apparaissents les uns après les autres.
-Le but est que cette partie de la présentation reste dynamique malgré sa potentielle longueur.
+- Démonstration en live de la construction du Makefile qui combine les éléments présentés précédemment.
 
 ## 5- Améliorations possibles
 
