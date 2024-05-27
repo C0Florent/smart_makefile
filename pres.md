@@ -15,7 +15,7 @@ Imaginons un projet:
 $ tree
 .
 ├── defs.h
-├── do_computation.c
+├── long.c
 ├── main.c
 └── Makefile
 ```
@@ -40,7 +40,7 @@ defs.h:
 #endif /* MY_DEFS */
 ```
 
-do\_computation.c est un gros fichier dont la compilation dure longtemps, il est préférable de ne pas le recompiler inutilement.
+long.c est un gros fichier dont la compilation dure longtemps, il est préférable de ne pas le recompiler inutilement.
 
 Comme on peut le voir, main.c inclut defs.h, pourtant, avec un Makefile simpliste tel que celui utilisé dans cet exemple, main.c ne sera pas recompilé si defs.h est modifié.
 
