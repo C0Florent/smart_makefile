@@ -31,7 +31,7 @@ int main(void)
 ```
 
 defs.h:
-```
+```c
 #ifndef MY_DEFS
     #define MY_DEFS
 
@@ -68,7 +68,19 @@ Le but est que cette partie de la présentation reste dynamique malgré sa poten
 
 ## 6- Pour quels projets utiliser cette solution ?
 
-Pour tous vos projets en C ou C++, compilés avec gcc ou clang, où vous aimeriez ne pas avoir besoin de recompiler votre projet entier à chaque vous modifiez un .h/.hpp.
+Pour tous vos projets en C ou C++, compilés avec gcc ou clang, où vous aimeriez ne pas avoir besoin de recompiler votre projet entier à chaque fois que vous modifiez un .h/.hpp.
 Donc, à ma connaissance, à peu près n'importe quel projet où vous voulez souvent lancer des compilations, et où elles peuvent durer longtemps.
 
 *Ça pourrait servir pour le zappy*
+
+## Lexique
+
+### make
+
+Entre parenthèses sont indiqués les noms utilisés dans [la documentation de make](https://www.gnu.org/software/make/manual/make.html).
+
+- Règle (*rule*) : partie d'un Makefile qui décrit comment construire un fichier en particulier
+- Modèle de règle (*pattern rule*) : Règle généralisée à partir d'un motif commun à différents noms de fichiers
+- Cible (*target*) : nom du fichier qu'une règle vise à produire
+- Prérequis (*prerequisite*) : Fichier dont une règle dépend (par exemple : .c pour fabriquer un .o)
+- Recette (*recipe*) : liste de commandes qui définit comment une règle construit sa cible à partir des prérequis
