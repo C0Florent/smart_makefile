@@ -1,3 +1,4 @@
 *.o
 .vscode
 example1/my_test
+example1_auto/my_test
