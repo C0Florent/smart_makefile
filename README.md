@@ -24,3 +24,11 @@ A simple demonstration of how Makefile rules can call each other and how they de
 ## live_demo
 
 The simplest version of a scalable Makefile which tracks dependencies and updates object files when needed. It was built live during a presentation, and actually only consists in the "simple" Makefile of *example1* with 4 actual code lines added
+
+---
+
+## Resources
+
+This build system is inspired by [this article](https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/) written by Paul D. Smith. You can check out his website at https://mad-scientist.net/
+
+If you have any question on how this works or how to make improvements for your own usage, make sure to check out the [GNU make documentation](https://www.gnu.org/software/make/manual/), which is very structured and accessible in many different formats.
