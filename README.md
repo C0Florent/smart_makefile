@@ -2,6 +2,8 @@
 
 A "smart" build system for C/C++ built using GNU make, which rebuilds sources if headers they depend on are updated.
 
+This was presented along with [this slideshow](https://epitechfr-my.sharepoint.com/:p:/g/personal/florent_charpentier_epitech_eu/ET8L8y4vGQBMgK2gOpf5RksBvlR3y_Qfb56GwtbCMTbM7w?e=qUDmOe) (which is in French) on the 29th of May, 2024.
+
 ---
 
 This repository contains several examples of Makefiles, all in seperate directories.
